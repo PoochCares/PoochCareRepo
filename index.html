@@ -40,7 +40,8 @@
     <section id="service"></section>
 
     <!-- QUI  -->
-    <section id="offer" class="py-5">
+
+ <section id="offer" class="py-5">
       <div class="container py-3 py-md-5">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-6 mb-lg-0 mb-5 pl-lg-5">
@@ -86,13 +87,77 @@
         </div>
       </div>
     </section>
+    
+    <section id="number " class="py-5 bg-green">
+      <div class="container py-lg-0 py-3">
+        <div class="row justify-content-around">
+          <div class="col-6 col-lg-3">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              730
+            </p>
+            <p class="mb-0 text-center number__text">Happy Clients</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              80
+            </p>
+            <p class="mb-0 text-center number__text">Professionals</p>
+          </div>
+          <div class="col-6 col-lg-3 mt-lg-0 mt-5">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              812
+            </p>
+            <p class="mb-0 text-center number__text">Adopted Pets</p>
+          </div>
+          <div class="col-6 col-lg-3 mt-lg-0 mt-5">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              90
+            </p>
+            <p class="mb-0 text-center number__text">Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="number"></section>
+
     <section id="plan"></section>
     <section id="nutrition"></section>
     <!-- THAO  -->
     <section id="testi"></section>
     <section id="contact"></section>
     <footer></footer>
+
+    <!-- COUNT UP -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./Counting-Up/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp({});
+    </script>
   </body>
 </html>
