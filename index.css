@@ -45,6 +45,87 @@ body {
   color: #696969;
   margin: 15px 0 35px 0;
 }
+/* --------- HEADER ------------*/
+.navbar-brand{
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #189a46;
+}
+.nav-item{
+  padding: 7px;
+}
+
+.navbar .nav-link{
+  transition: all 0.5s ease;
+  padding: 14px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+}
+
+.nav-item a{
+  color: #000c04;
+}
+.collapse{
+  display: flex;
+  align-items: center;
+}
+
+.navbar .search{
+  font-size: 16px;
+    line-height: 25px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(147, 107, 232, 0.05);
+    color: #189a46;
+}
+.search:hover{
+  color: #fff;
+  background: #189a46;
+}
+.active a{
+  color: #189a46;
+}
+
+.dropdown-toggle::after {
+ display: none;
+}
+.dropdown{
+  display: flex;
+  align-items: center;
+}
+.dropdown i{
+  font-size: 10px;
+  color: #999;
+}
+header .nav-link{
+  overflow: hidden;
+}
+header .nav-link::before, .active .nav-link::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #35a22c;
+  bottom: 13px;
+  left: 1;
+  transition: all 0.5s;
+  
+}
+
+header .nav-link:hover::before{
+  width: 80%;
+}
+
+header .nav-link:hover.nav-link{
+  color: #35a22c;
+}
 
 /* --------- OFFER ------------*/
 
