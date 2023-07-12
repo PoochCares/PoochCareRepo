@@ -147,7 +147,7 @@ body {
   display: inline-block;
   padding: 8px 20px;
   background: #fff;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .plan__card-top h3 {
