@@ -91,28 +91,6 @@ body {
   font-weight: 400;
 }
 
-@media screen and (max-width: 992px) {
-  .number__num {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .number__text {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 737px) {
-  .number__num {
-    font-size: 35px;
-    line-height: 38px;
-    margin-top: 20px;
-  }
-
-  .number__text {
-    font-size: 17px;
-  }
-}
-
 /* --------- PLAN ------------*/
 #plan {
   background-color: rgba(147, 107, 232, 0.05);
@@ -138,6 +116,11 @@ body {
   overflow: hidden;
 }
 
+.plan__card-left,
+.plan__card-right {
+  padding: 56px 40px;
+}
+
 .plan__card-left {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -157,13 +140,19 @@ body {
 .plan__card-middle .plan__card-top {
   background-color: #189a46;
   width: 100%;
+  padding: 48px 40px 8px;
 }
 
-.plan__card-middle.col-4 {
-  padding: 0;
+.plan__card-middle .plan__card-bottom {
+  padding: 32px 40px 56px;
 }
-.plan__card-top {
-  padding: 48px 40px 10px;
+
+/* #plan .col-lg-4 {
+  padding: 0;
+} */
+
+.plan__card-middle.col-lg-4 {
+  padding: 0;
 }
 
 .plan__card-top .plan__card-save {
@@ -212,8 +201,9 @@ body {
   vertical-align: text-top;
 }
 
-.plan__card-bottom {
-  padding: 32px 40px 56px;
+.plan__card-bottom ul {
+  margin-bottom: 0;
+  padding-top: 16px;
 }
 
 .plan__card-bottom ul li {
@@ -237,9 +227,105 @@ body {
   transition: 0.3s ease-in;
   border-radius: 10px;
   border: none;
+  outline: #189a46;
 }
 
 .plan__button:hover {
   background-color: #116e32;
   border-color: #116e32;
+}
+
+.plan__button:focus {
+  outline: #189a46;
+}
+
+/* --------- RESPONSIVE ------------*/
+@media screen and (max-width: 1366px) {
+  .plan__card-wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .number__num {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .number__text {
+    font-size: 18px;
+  }
+  .plan__card-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .plan__card-left,
+  .plan__card-right {
+    border-radius: 6px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .plan__card-wrapper {
+    margin: 50px auto 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .plan__card-wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .number__num {
+    font-size: 35px;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+
+  .number__text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .plan__card-wrapper {
+    grid-gap: 20px;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plan__card-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .plan__card-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .heading {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .plan__button {
+    padding: 12px 30px;
+  }
 }
