@@ -38,10 +38,101 @@
     <section id="carousel"></section>
     <section id="about"></section>
     <section id="service"></section>
-    <!-- QUI  -->
-    <section id="offer"></section>
-    <section id="number"></section>
 
+    <!-- QUI  -->
+    <section id="offer" class="py-5">
+      <div class="container py-3 py-md-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 mb-lg-0 mb-5 pl-lg-5">
+            <img
+              src="./image-video/offer_1.png"
+              class="img-fluid rounded-10px"
+              alt="offer-photo"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p class="sub-heading mb-0">Why Choose Us</p>
+            <h2 class="heading mb-0">What We Offer for You</h2>
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet,
+              consectetur adipisicingelit.
+            </p>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-start align-items-center my-3">
+                <i class="fa fa-check offer__icon color-green"></i>
+                <p class="m-0 font-weight-bolder">Certified Groomer</p>
+              </li>
+              <li class="d-flex justify-content-start align-items-center my-3">
+                <i class="fa fa-check offer__icon color-green"></i>
+                <p class="m-0 font-weight-bolder">10 Years of Experience</p>
+              </li>
+              <li class="d-flex justify-content-start align-items-center my-3">
+                <i class="fa fa-check offer__icon color-green"></i>
+
+                <p class="m-0 font-weight-bolder">Pet Lover</p>
+              </li>
+              <li class="d-flex justify-content-start align-items-center my-3">
+                <i class="fa fa-check offer__icon color-green"></i>
+                <p class="m-0 font-weight-bolder">Customer Supports</p>
+              </li>
+              <li class="d-flex justify-content-start align-items-center my-3">
+                <i class="fa fa-check offer__icon color-green"></i>
+                <p class="m-0 font-weight-bolder">Veterinary Help</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="number " class="py-5 bg-green">
+      <div class="container py-lg-0 py-3">
+        <div class="row justify-content-around">
+          <div class="col-6 col-lg-3">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              730
+            </p>
+            <p class="mb-0 text-center number__text">Happy Clients</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              80
+            </p>
+            <p class="mb-0 text-center number__text">Professionals</p>
+          </div>
+          <div class="col-6 col-lg-3 mt-lg-0 mt-5">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              812
+            </p>
+            <p class="mb-0 text-center number__text">Adopted Pets</p>
+          </div>
+          <div class="col-6 col-lg-3 mt-lg-0 mt-5">
+            <p
+              class="mb-0 text-center number__num counter"
+              data-counter-time="2000"
+              data-counter-delay="10"
+            >
+              90
+            </p>
+            <p class="mb-0 text-center number__text">Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="plan" class="py-5">
       <div class="pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
         <div class="container">
@@ -131,5 +222,22 @@
     <section id="testi"></section>
     <section id="contact"></section>
     <footer></footer>
+
+    <!-- COUNT UP -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./Counting-Up/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp({});
+    </script>
   </body>
 </html>
