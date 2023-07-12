@@ -13,24 +13,9 @@ body {
 .bg-green {
   background-color: #189a46;
 }
-.text-red {
-  color: #f53626;
-}
-
-.text-black {
-  color: #000c04;
-}
 
 .color-green {
   color: #189a46;
-}
-
-.text-gray {
-  color: #696969;
-}
-
-.text-light-gray {
-  color: #999;
 }
 
 .rounded-10px {
@@ -147,10 +132,6 @@ body {
   padding: 32px 40px 56px;
 }
 
-/* #plan .col-lg-4 {
-  padding: 0;
-} */
-
 .plan__card-middle.col-lg-4 {
   padding: 0;
 }
@@ -239,6 +220,95 @@ body {
   outline: #189a46;
 }
 
+/* --------- NUTRITION ------------*/
+
+#nutrition .content {
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+}
+
+.nutrition__play-button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nutrition__play-button i {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  text-align: center;
+  line-height: 55px;
+  color: #189a46;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  animation: ripple 1s linear infinite;
+}
+
+.nutrition__play-button i:hover {
+  scale: 1.1;
+}
+
+.pop-up-video {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #0b0b0b;
+  z-index: 2;
+  opacity: 0.95;
+}
+
+.pop-up-video > div {
+  max-width: 750px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.pop-up-video > div div {
+  width: 100%;
+  height: 400px;
+}
+
+.pop-up-video iframe {
+  width: 100%;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pop-up__iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.button__close {
+  line-height: 40px;
+  right: 0;
+  top: -40px;
+  color: #fff;
+  font-style: normal;
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.button__close:focus {
+  border: none;
+  outline: none;
+}
+
+.prohibited-scroll {
+  overflow: hidden;
+}
+
 /* --------- RESPONSIVE ------------*/
 @media screen and (max-width: 1366px) {
   .plan__card-wrapper {
@@ -254,6 +324,9 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  #offer img {
+    width: 100%;
+  }
   .number__num {
     font-size: 40px;
     line-height: 50px;
@@ -267,7 +340,7 @@ body {
   }
   .plan__card-left,
   .plan__card-right {
-    border-radius: 6px !important;
+    border-radius: 6px;
   }
 }
 
@@ -327,5 +400,17 @@ body {
   }
   .plan__button {
     padding: 12px 30px;
+  }
+}
+
+/* --------- KEYFRAME -  ANIMATION ------------*/
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164),
+      0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25),
+      0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }

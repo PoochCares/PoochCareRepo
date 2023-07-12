@@ -218,7 +218,52 @@
       </div>
     </section>
 
-    <section id="nutrition"></section>
+    <section id="nutrition" class="py-5">
+      <div class="pb-lg-5">
+        <div class="container">
+          <div>
+            <p class="text-center sub-heading">Better pet nutrition.</p>
+            <h2 class="text-center heading">
+              The finest fresh food and all your pet needs.
+            </h2>
+            <p class="content text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum
+              dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+              explicabo officia.
+            </p>
+          </div>
+          <div class="nutrition__video mt-5 position-relative">
+            <img
+              src="./image-video/video-thumbnail.jpeg"
+              alt="video-thumbnail"
+              class="img-fluid rounded-10px"
+            />
+            <div class="nutrition__play-button position-absolute">
+              <i class="fa fa-play rounded-circle"></i>
+            </div>
+          </div>
+
+          <!-- pop up video when having click event -->
+          <div class="pop-up-video d-none position-fixed p-3">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="position-relative">
+                <iframe
+                  title="vimeo-player"
+                  src="https://player.vimeo.com/video/101587706?h=187bfc0989"
+                  width="640"
+                  height="360"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </iframe>
+                <button class="button__close position-absolute">x</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- THAO  -->
     <section id="testi"></section>
     <section id="contact"></section>
@@ -237,8 +282,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./Counting-Up/jquery.countup.min.js"></script>
-    <script>
-      $(".counter").countUp({});
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
