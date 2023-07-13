@@ -17,3 +17,27 @@ close.addEventListener("click", () => {
   popUpVideo.classList.add("d-none");
   body.classList.remove("prohibited-scroll");
 });
+
+// OWL CAROUSEL
+  $('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 20,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+        dots: false
+      },
+      768: {
+        items: 1,
+        dots: true
+      },
+      992: {
+        items: 2
+      }
+    }
+  })
+// SCREEN MODE - LIGHT/DARK
+  document.getElementById("switchButton").onclick = function () {
+    document.getElementById("myBody").classList.toggle("dark");
+  };
