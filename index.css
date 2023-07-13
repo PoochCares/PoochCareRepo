@@ -661,6 +661,7 @@ footer {
   position: fixed;
   right: 15px;
   bottom: 60px;
+  z-index: 50;
 }
 
 .toTop .cd-top i {
