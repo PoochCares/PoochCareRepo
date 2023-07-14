@@ -157,7 +157,112 @@ header .nav-link:hover::before {
 header .nav-link:hover.nav-link {
   color: #35a22c;
 }
+header{
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+/* --------- CAROUSEL ------------*/
 
+#carousel .item{
+  background: url(./image-video/banner1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  position: relative;
+  top: 80px;
+  
+}
+#carousel .item__2{
+  background: url(./image-video/banner2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+}
+.banner__content{
+  transform: translateY(90%);
+}
+.banner__content_two{
+ position: absolute;
+ left: 42%;
+ transform: translateY(90%);
+}
+.banner .item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(12, 12, 12,0.6);
+}
+.banner h5 {
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+}
+.banner p {
+  color: #fff;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.9;
+}
+
+.btn-white {
+  padding: 12px 35px;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: 0.3s ease-in;
+  border-radius:10px;
+  background-color: #fff;
+  color: #189A46;
+}
+.border-btn{
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 35px;
+}
+.border-btn:hover{
+  background-color: #fff;
+  color: #189a46;
+}
+
+.owl-dots {
+  margin-top: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 30px;
+}
+/* --------- ABOUT ------------*/
+#about p{
+  font-size: 1.2em;
+  line-height: 28px;
+}
+a.read{
+  font-size: 17px;
+  padding: 0;
+  border-bottom: 2px solid #189A46;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  border-radius: 0;
+  margin-top: 20px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+a.read:hover{
+  color: #000c04;
+
+}
 /* --------- OFFER ------------*/
 
 .offer__icon {

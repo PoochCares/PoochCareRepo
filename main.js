@@ -19,7 +19,7 @@ close.addEventListener("click", () => {
 });
 
 // OWL CAROUSEL
-  $('.owl-carousel').owlCarousel({
+  $('.testi__content').owlCarousel({
     loop: false,
     margin: 20,
     nav: false,
@@ -36,7 +36,36 @@ close.addEventListener("click", () => {
         items: 2
       }
     }
-  })
+  });
+
+  $('.banner').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      // autoplay: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 1,
+          nav: false
+        }
+      }
+    })
 // SCREEN MODE - LIGHT/DARK
   document.getElementById("switchButton").onclick = function () {
     document.getElementById("myBody").classList.toggle("dark");
