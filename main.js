@@ -37,13 +37,13 @@ close.addEventListener("click", () => {
       }
     }
   });
-
+// banner 
   $('.banner').owlCarousel({
       loop: true,
       margin: 0,
       nav: false,
       responsiveClass: true,
-      // autoplay: true,
+      autoplay: true,
       autoplayTimeout: 5000,
       autoplaySpeed: 1000,
       autoplayHoverPause: false,

@@ -50,10 +50,23 @@
 
   <body id="myBody">
     <!-- CHAU  -->
-    <header id="header" class="bg-white">
+    <header id="header" class="main-header fixed-top">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">Pooch Care </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-times icon__close icon__toogler"></i>
+            <i class="fa-solid fa-bars icon__expand icon__toogler"></i>
+          </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
@@ -85,21 +98,40 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a class="dropdown-item" href="#">Blog Posts</a>
-                  <a class="dropdown-item" href="#">Landing Page</a>
+                  <a class="dropdown-item nav-link" href="#">Blog Posts</a>
+                  <a class="dropdown-item nav-link" href="#">Landing Page</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <a href="" class="search"> <i class="fa fa-search"></i></a>
-            <div id="screenmode">
-              <button id="switchButton" title="Switch to change theme">
-                <i class="gg-moon"></i>
-                <i class="gg-sun"></i>
-              </button>
+            <div class="search__icon">
+              <a href="#search" class="search"> <i class="fa fa-search"></i></a>
+
+              <div id="search" class="pop-overlay">
+                <div class="search-popup">
+                  <form action="#url" method="get" class="d-sm-flex">
+                    <input
+                      type="search"
+                      name="s"
+                      placeholder="Search.."
+                      required="required"
+                      autofocus=""
+                    />
+
+                    <button type="submit">Search</button>
+                    <a class="close" href="#url">×</a>
+                  </form>
+                </div>
+              </div>
             </div>
+          </div>
+          <div id="screenmode">
+            <button id="switchButton" title="Switch to change theme">
+              <i class="gg-moon"></i>
+              <i class="gg-sun"></i>
+            </button>
           </div>
         </nav>
       </div>
@@ -218,7 +250,7 @@
         </div>
       </div>
     </section>
-    <section id="service" class="bg-light py-5">
+    <section id="service" class="py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-sm-6">
@@ -283,7 +315,7 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#url" class="read"> Read More</a>
+              <a href="#" class="read"> Read More</a>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
@@ -296,7 +328,7 @@
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#url" class="read"> Read More</a>
+              <a href="#" class="read"> Read More</a>
             </div>
           </div>
         </div>
@@ -401,7 +433,7 @@
     <section id="plan" class="py-5">
       <div class="pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
         <div class="container">
-          <p class="text-center sub-heading">Our Plans</p>
+          <p class="text-center sub-heading font-weight-bold">Our Plans</p>
           <h2 class="text-center heading">Affordable Packages</h2>
           <div
             class="plan__card-wrapper row justify-content-center align-items-center"
