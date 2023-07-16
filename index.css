@@ -363,7 +363,7 @@ button.navbar-toggler.collapsed .icon__close {
   color: #189a46;
 }
 
-.owl-dots {
+#carousel .owl-dots {
   margin-top: 0px;
   position: absolute;
   left: 0px;
