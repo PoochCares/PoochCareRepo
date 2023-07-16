@@ -68,13 +68,14 @@ ul {
 }
 
 /* --------- HEADER ------------*/
-.navbar-brand {
+.navbar-light .navbar-brand {
   font-size: 34px;
   font-weight: 600;
-  text-transform: capitalize;
   color: #189a46;
 }
-
+.navbar-light .navbar-brand:hover {
+  color: #189A46;
+}
 .nav-item {
   padding: 7px;
 }
@@ -1002,7 +1003,7 @@ footer {
 .dark .navbar-light .navbar-nav .nav-link{
   color: #fff;
 }
-.dark .navbar-brand{
+.dark .navbar-light .navbar-brand{
   color: #189A46;
 }
 .dark .navbar-light .navbar-nav .active > .nav-link{
