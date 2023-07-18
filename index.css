@@ -59,7 +59,7 @@ p {
 
 a,
 a:hover {
-  color: #000c04;
+  color: #696969;
   text-decoration: none;
 }
 
@@ -387,6 +387,7 @@ a.read{
   border-radius: 0;
   margin-top: 20px;
   display: inline-block;
+  color: #000c04;
 }
 a.read:hover{
   color: #189A46;
