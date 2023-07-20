@@ -69,6 +69,7 @@ ul {
 
 /* --------- HEADER ------------*/
 header {
+  background-color: #fff;
   padding: 0px;
   transition: all 0.4s ease 0s;
   height: 90px;
@@ -197,8 +198,9 @@ header .nav-link:hover::before {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #189a46;
 }
-header {
-  background-color: #fff;
+#screenmode{
+  line-height: 10px;
+  margin-left: 10px;
 }
 
 /* header search pop up */
@@ -1170,7 +1172,7 @@ footer {
   #screenmode {
     position: absolute;
     right: 36px;
-    top: 10px;
+    top: 13px;
   }
   .search {
     position: absolute;
