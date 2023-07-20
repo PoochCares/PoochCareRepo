@@ -43,7 +43,7 @@ close.addEventListener("click", () => {
       margin: 0,
       nav: false,
       responsiveClass: true,
-      autoplay: true,
+      // autoplay: true,
       autoplayTimeout: 5000,
       autoplaySpeed: 1000,
       autoplayHoverPause: false,
@@ -70,3 +70,11 @@ close.addEventListener("click", () => {
   document.getElementById("switchButton").onclick = function () {
     document.getElementById("myBody").classList.toggle("dark");
   };
+// window scroll
+window.onscroll = function (){
+  if(document.documentElement.scrollTop > 60 || document.body.scrollTop > 60){
+    document.getElementsByTagName("nav")[0].classList.add("py-0");
+  } else{
+    document.getElementsByTagName("nav")[0].classList.remove("py-0");
+  }
+}

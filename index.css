@@ -68,7 +68,21 @@ ul {
 }
 
 /* --------- HEADER ------------*/
+header {
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  height: 90px;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+.navbar{
+  padding: 0;
+  transition: all 0.5s ease;
+  line-height: 40px;
+}
 .navbar-light .navbar-brand {
+  padding: 0;
   font-size: 34px;
   font-weight: 600;
   color: #189a46;
@@ -78,9 +92,6 @@ ul {
 }
 .nav-item {
   padding: 7px;
-}
-.navbar {
-  padding: 0.5rem 0;
 }
 .navbar .nav-link {
   transition: all 0.5s ease;
@@ -110,6 +121,7 @@ ul {
   display: inline-block;
   background-color: rgba(147, 107, 232, 0.05);
   color: #189a46;
+  transition: all 0.5s ease;
 }
 
 .search:hover {
@@ -278,10 +290,13 @@ button.navbar-toggler.collapsed .icon__close {
   border: none;
 }
 
+.navbar-toggler{
+ 
+  padding: 0;
+}
 .icon__toogler {
-  width: 30px;
-  padding: 5px;
-  font-size: 18px;
+  width: 33px;
+  font-size: 22px;
   color: #fff;
   background-color: #189a46;
   border-radius: 2px;
@@ -336,22 +351,25 @@ button.navbar-toggler.collapsed .icon__close {
   line-height: 30px;
   opacity: 0.9;
 }
-
-.btn-white {
+.btn-style {
   padding: 12px 35px;
   font-size: 18px;
   line-height: 28px;
-  text-transform: capitalize;
   font-weight: 400;
   transition: 0.3s ease-in;
   border-radius: 10px;
+}
+.btn-white {
   background-color: #fff;
   color: #189a46;
+}
+.btn:hover {
+  color: #189A46;
+  text-decoration: none;
 }
 .border-btn {
   border: 2px solid #fff;
   color: #fff;
-  padding: 10px 35px;
 }
 .border-btn:hover {
   background-color: #fff;
@@ -963,11 +981,17 @@ footer {
 /* ============================================================
 =============================================================*/
 /* SCREEN MODE */
-
+#sreenmode{
+  width: 60px;
+}
 #switchButton {
-  padding: 20px;
+  width: 24px;
+  height: 24px;
+  padding: 3px 0;
+  margin:0  20px;
   border: transparent;
   background-color: transparent;
+  color: #404040;
 }
 
 #switchButton i {
@@ -1019,7 +1043,7 @@ footer {
   color: white;
 }
 .dark .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: #ddd;
 }
 .dark .navbar-light .navbar-brand {
   color: #189a46;
@@ -1145,8 +1169,8 @@ footer {
   }
   #screenmode {
     position: absolute;
+    right: 36px;
     top: 10px;
-    right: 70px;
   }
   .search {
     position: absolute;
@@ -1173,7 +1197,12 @@ footer {
     right: 6px;
     top: 10px;
   }
-
+ .icon__expand{
+   color: #fff;
+    line-height: 34px;
+    background-color:#189A46;
+    border-radius: 5px;
+ }
   .dropdown-menu {
     width: auto;
     transform: translateX(0) translateY(10px);
@@ -1226,9 +1255,15 @@ footer {
   .contact__content {
     width: 80%;
   }
+  
 }
 
 @media screen and (max-width: 800px) {
+  #screenmode {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+  }
   .plan__card-wrapper {
     width: 60%;
     margin: 50px auto 0;
