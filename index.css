@@ -993,7 +993,7 @@ footer {
   position: fixed;
   right: 15px;
   bottom: 60px;
-  z-index: 50;
+  z-index: 1;
   transition: all 0.5s;
 }
 
