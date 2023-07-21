@@ -74,10 +74,6 @@ close.addEventListener("click", () => {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  var x = window.matchMedia("(max-width: 991.98px)");
-  var styleScrolled = `
-    padding: 10px 0;
-    height: fit-content;`
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").classList.add("nav-fixed");
   } else {
