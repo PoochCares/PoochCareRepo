@@ -80,12 +80,12 @@ header {
 header.nav-fixed {
   padding-bottom: 0;
   background-color: #fff;
-  height:80px;
+  height: 80px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
-.navbar{
+.navbar {
   padding: 0;
   transition: all 0.5s ease;
   line-height: 30px;
@@ -206,7 +206,7 @@ header .nav-link:hover::before {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #189a46;
 }
-#screenmode{
+#screenmode {
   line-height: 10px;
   margin-left: 10px;
 }
@@ -298,11 +298,10 @@ button.navbar-toggler.collapsed .icon__close {
 .navbar-light .navbar-toggler {
   border: none;
 }
-header .nav-search{
+header .nav-search {
   display: none;
 }
-.navbar-toggler{
- 
+.navbar-toggler {
   padding: 0;
 }
 .icon__toogler {
@@ -318,7 +317,7 @@ header .nav-search{
 /* --------- CAROUSEL ------------*/
 
 #carousel .item {
-  background: url(./image-video/banner1.jpg); 
+  background: url(./image-video/banner1.jpg);
   background-size: cover;
   min-height: calc(100vh - 90px);
   position: relative;
@@ -332,12 +331,11 @@ header .nav-search{
   background-size: cover;
 }
 
-.banner__content{
+.banner__content {
   position: relative;
   z-index: 1;
-  
 }
-.banner__info{
+.banner__info {
   max-width: 700px;
 }
 
@@ -378,7 +376,7 @@ header .nav-search{
   color: #189a46;
 }
 .btn:hover {
-  color: #189A46;
+  color: #189a46;
   text-decoration: none;
 }
 .border-btn {
@@ -402,7 +400,7 @@ header .nav-search{
   font-size: 1.2em;
   line-height: 28px;
 }
-.about__content{
+.about__content {
   margin: 0 auto;
   max-width: 700px;
   text-align: center;
@@ -416,11 +414,10 @@ a.read {
   border-radius: 0;
   margin-top: 20px;
   display: inline-block;
-  color: #000c04  ;
+  color: #000c04;
 }
-a.read:hover{
-  color: #189A46;
-
+a.read:hover {
+  color: #189a46;
 }
 /* SERVICE  */
 #service {
@@ -455,7 +452,7 @@ a.read:hover{
   transition: all 0.5s ease;
 }
 .box a:hover {
-  color: #189A46;
+  color: #189a46;
   text-decoration: none;
 }
 .box:hover {
@@ -900,7 +897,7 @@ body .ThaoHuynh {
 
   transition: all 0.5s;
 }
-#contact .contact__form button:hover{
+#contact .contact__form button:hover {
   color: #fff;
 }
 /* ============================================================
@@ -1010,14 +1007,14 @@ footer {
 /* ============================================================
 =============================================================*/
 /* SCREEN MODE */
-#sreenmode{
+#sreenmode {
   width: 60px;
 }
 #switchButton {
   width: 24px;
   height: 24px;
   padding: 3px 0;
-  margin:0  20px;
+  margin: 0 20px;
   border: transparent;
   background-color: transparent;
   color: #404040;
@@ -1042,7 +1039,7 @@ footer {
 /* ============================================================
 =============================================================*/
 /* darkmode */
-.dark #offer p.content{
+.dark #offer p.content {
   color: #696969;
 }
 .dark header {
@@ -1122,7 +1119,7 @@ footer {
 .dark .box:hover {
   background: #222;
 }
-.dark a.read{
+.dark a.read {
   color: #ddd;
 }
 .dark a.read:hover,
@@ -1197,7 +1194,7 @@ footer {
   #carousel .banner__info h5 {
     font-size: 52px;
     line-height: 62px;
-}
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -1208,7 +1205,7 @@ footer {
 }
 
 @media screen and (max-width: 991.98px) {
-  .pop-overlay{
+  .pop-overlay {
     z-index: 1500;
   }
   header {
@@ -1218,15 +1215,15 @@ footer {
   .header-fixed-space-height {
     margin-top: 80px;
   }
-  header .nav-search{
-  display: flex;
-  justify-content: left;
-  margin: 20px 0
+  header .nav-search {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
   }
   header.nav-fixed {
     height: auto;
     padding: 10px 0;
-}
+  }
   #screenmode {
     position: absolute;
     right: 36px;
@@ -1253,12 +1250,13 @@ footer {
     right: 6px;
     top: 10px;
   }
- .icon__expand,.icon__close{
-   color: #fff;
+  .icon__expand,
+  .icon__close {
+    color: #fff;
     line-height: 34px;
-    background-color:#189A46;
+    background-color: #189a46;
     border-radius: 5px;
- }
+  }
   .dropdown-menu {
     width: auto;
     transform: translateX(0) translateY(10px);
@@ -1281,19 +1279,19 @@ footer {
   }
   .collapse {
     flex-direction: column;
-}
+  }
 
-  .search__left{
-  width: 100% ;
-  display: block;
-  text-align: left;
-  margin: 15px 0;
+  .search__left {
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin: 15px 0;
   }
 
   #carousel .banner__info h5 {
     font-size: 48px;
     line-height: 55px;
-}
+  }
 
   #offer img {
     width: 100%;
@@ -1319,6 +1317,16 @@ footer {
     width: 414px;
   }
 
+  .plan__card-left {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .plan__card-right {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
   .plan__card-middle {
     width: 426.42px;
   }
@@ -1326,7 +1334,6 @@ footer {
   .contact__content {
     width: 80%;
   }
-  
 }
 
 @media screen and (max-width: 800px) {
@@ -1342,11 +1349,15 @@ footer {
 
   .plan__card-left,
   .plan__card-right {
+    border-radius: 6px;
+
     border: 1px solid #f0f3f0;
   }
 
   .dark .plan__card-left,
   .dark .plan__card-right {
+    border-radius: 6px;
+
     border: 1px solid #444;
   }
 }
@@ -1354,7 +1365,7 @@ footer {
 @media screen and (max-width: 767.98px) {
   .banner__info p {
     font-size: 16px;
-}
+  }
   .plan__card-wrapper {
     width: 75%;
   }
@@ -1419,20 +1430,20 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  #carousel .item{
+  #carousel .item {
     min-height: 480px;
     background-position: left;
   }
   #carousel .banner__info h5 {
     font-size: 32px;
     line-height: 42px;
-}
+  }
   .plan__card-wrapper {
     width: 80%;
   }
 }
 @media screen and (max-width: 440px) {
-  #carousel .item{
+  #carousel .item {
     min-height: 440px;
   }
 }
@@ -1453,11 +1464,11 @@ footer {
     padding: 12px 30px;
   }
 }
-@media screen and (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0; 
-     padding-left: 0; 
-}
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /* --------- KEYFRAME -  ANIMATION ------------*/
