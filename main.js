@@ -43,7 +43,7 @@ close.addEventListener("click", () => {
       margin: 0,
       nav: false,
       responsiveClass: true,
-      autoplay: true,
+      // autoplay: true,
       autoplayTimeout: 5000,
       autoplaySpeed: 1000,
       autoplayHoverPause: false,
@@ -70,3 +70,14 @@ close.addEventListener("click", () => {
   document.getElementById("switchButton").onclick = function () {
     document.getElementById("myBody").classList.toggle("dark");
   };
+// window scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").classList.add("nav-fixed");
+  } else {
+    document.getElementById("header").classList.remove("nav-fixed");
+  }
+}
+
