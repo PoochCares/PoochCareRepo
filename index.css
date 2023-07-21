@@ -78,9 +78,9 @@ header {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
 header.nav-fixed {
-  padding: 0px;
+  padding-bottom: 0;
   background-color: #fff;
-  height: 80px;
+  height:80px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
@@ -88,7 +88,7 @@ header.nav-fixed {
 .navbar{
   padding: 0;
   transition: all 0.5s ease;
-  line-height: 40px;
+  line-height: 30px;
 }
 .navbar-light .navbar-brand {
   padding: 0;
@@ -188,15 +188,14 @@ header .nav-link {
 .dropdown-item:hover {
   background-color: transparent;
 }
-header .nav-link::before,
-.active .nav-link::before {
+header a.nav-link::before,
+.active a.nav-link::before {
   content: "";
   position: absolute;
   width: 0;
   height: 1px;
   background: #35a22c;
   bottom: 13px;
-  left: 1;
   transition: all 0.5s;
 }
 
@@ -698,7 +697,7 @@ a.read:hover{
   top: 0;
   left: 0;
   background-color: #0b0b0b;
-  z-index: 2;
+  z-index: 2000;
   opacity: 0.95;
 }
 
@@ -900,7 +899,9 @@ body .ThaoHuynh {
 
   transition: all 0.5s;
 }
-
+#contact .contact__form button:hover{
+  color: #fff;
+}
 /* ============================================================
 =============================================================*/
 /* FOOTER */
@@ -1040,6 +1041,9 @@ footer {
 /* ============================================================
 =============================================================*/
 /* darkmode */
+.dark #offer p.content{
+  color: #696969;
+}
 .dark header {
   background: #151515;
 }
@@ -1447,6 +1451,12 @@ footer {
   .plan__button {
     padding: 12px 30px;
   }
+}
+@media screen and (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0; 
+     padding-left: 0; 
+}
 }
 
 /* --------- KEYFRAME -  ANIMATION ------------*/
