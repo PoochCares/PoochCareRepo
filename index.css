@@ -100,7 +100,7 @@ header.nav-fixed {
   color: #189a46;
 }
 .nav-item {
-  padding: 7px;
+  padding: 10px;
 }
 .navbar .nav-link {
   transition: all 0.5s ease;
@@ -220,7 +220,6 @@ header .nav-link:hover::before {
   transition: opacity 0ms;
   visibility: hidden;
   opacity: 0;
-  z-index: 11;
   background: #000000ba;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -299,7 +298,9 @@ button.navbar-toggler.collapsed .icon__close {
 .navbar-light .navbar-toggler {
   border: none;
 }
-
+header .nav-search{
+  display: none;
+}
 .navbar-toggler{
  
   padding: 0;
@@ -351,14 +352,14 @@ button.navbar-toggler.collapsed .icon__close {
   z-index: 1;
   background-color: rgba(12, 12, 12, 0.6);
 }
-.banner h5 {
+.banner__info h5 {
   font-size: 66px;
   line-height: 76px;
   font-weight: 700;
   color: #fff;
   text-transform: capitalize;
 }
-.banner p {
+.banner__info p {
   color: #fff;
   font-weight: 400;
   line-height: 30px;
@@ -1185,13 +1186,21 @@ footer {
 }
 
 @media screen and (max-width: 991.98px) {
+  .pop-overlay{
+    z-index: 1500;
+  }
   header {
     padding: 15px 0;
     height: fit-content;
   }
   .header-fixed-space-height {
     margin-top: 80px;
-}
+  }
+  header .nav-search{
+  display: flex;
+  justify-content: left;
+  margin: 20px 0
+  }
   header.nav-fixed {
     height: auto;
     padding: 10px 0;
@@ -1201,19 +1210,11 @@ footer {
     right: 36px;
     top: 13px;
   }
-  .navbar .search__icon__lg{
-    display: none;
-  }
-  .search-right{
-    display: flex;
-    justify-content: left;
-    margin: 20px 0
-  }
-
   .navbar-nav {
     float: left;
     text-align: center;
     width: 100%;
+    padding: 20px 0;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     display: inline-block;
@@ -1256,7 +1257,18 @@ footer {
   .active .nav-link::before {
     display: none;
   }
-   #carousel .banner__info h5 {
+  .collapse {
+    flex-direction: column;
+}
+
+  .search__left{
+  width: 100% ;
+  display: block;
+  text-align: left;
+  margin: 15px 0;
+  }
+
+  #carousel .banner__info h5 {
     font-size: 48px;
     line-height: 55px;
 }
