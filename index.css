@@ -1109,6 +1109,9 @@ footer {
 .dark .box:hover {
   background: #222;
 }
+.dark a.read{
+  color: #ddd;
+}
 .dark a.read:hover,
 .box a:hover {
   color: #189a46;
