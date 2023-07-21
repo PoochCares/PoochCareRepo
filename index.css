@@ -962,6 +962,9 @@ footer {
   color: #f53626;
 }
 
+.footer__bottom a:hover {
+  text-decoration: underline;
+}
 /* ============================================================
 =============================================================*/
 /* BACKTOTOP */
@@ -988,7 +991,12 @@ footer {
   position: fixed;
   right: 15px;
   bottom: 60px;
-  z-index: 50;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.toTop .cd-top:hover {
+  bottom: 70px;
 }
 
 .toTop .cd-top i {
@@ -1161,10 +1169,16 @@ footer {
   color: white;
 }
 
+.dark #contact p.title {
+  color: #afafaf;
+}
+
 .dark #footer {
   background: #111;
 }
 
+.dark .footer__item li,
+.dark .footer__item li span,
 .dark .footer__bottom p {
   color: #696969;
 }
