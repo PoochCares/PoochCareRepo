@@ -1189,6 +1189,9 @@ footer {
     padding: 15px 0;
     height: fit-content;
   }
+  .header-fixed-space-height {
+    margin-top: 80px;
+}
   header.nav-fixed {
     height: auto;
     padding: 10px 0;
@@ -1198,19 +1201,15 @@ footer {
     right: 36px;
     top: 13px;
   }
-  .search {
-    position: absolute;
-    left: 30px;
-    bottom: -8px;
+  .navbar .search__icon__lg{
+    display: none;
   }
-  .navbar .search {
-    font-size: 13px;
-    line-height: 25px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    transition: all 0.5s ease;
-}
+  .search-right{
+    display: flex;
+    justify-content: left;
+    margin: 20px 0
+  }
+
   .navbar-nav {
     float: left;
     text-align: center;
