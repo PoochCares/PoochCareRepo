@@ -1341,7 +1341,7 @@ footer {
   }
 
   .dark .plan__card-left,
-  .plan__card-right {
+  .dark .plan__card-right {
     border: 1px solid #444;
   }
 }
