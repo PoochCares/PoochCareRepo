@@ -71,12 +71,20 @@ ul {
 header {
   background-color: #fff;
   padding: 0px;
-  transition: all 0.4s ease 0s;
+  transition: all 0.4s ease;
   height: 90px;
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
+header.nav-fixed {
+  padding: 0px;
+  background-color: #fff;
+  height: 80px;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
 .navbar{
   padding: 0;
   transition: all 0.5s ease;
@@ -1169,6 +1177,10 @@ footer {
     padding: 15px 0;
     height: fit-content;
   }
+  header.nav-fixed {
+    height: auto;
+    padding: 10px 0;
+}
   #screenmode {
     position: absolute;
     right: 36px;

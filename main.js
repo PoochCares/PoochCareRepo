@@ -71,10 +71,17 @@ close.addEventListener("click", () => {
     document.getElementById("myBody").classList.toggle("dark");
   };
 // window scroll
-window.onscroll = function (){
-  if(document.documentElement.scrollTop > 60 || document.body.scrollTop > 60){
-    document.getElementsByTagName("nav")[0].classList.add("py-0");
-  } else{
-    document.getElementsByTagName("nav")[0].classList.remove("py-0");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var x = window.matchMedia("(max-width: 991.98px)");
+  var styleScrolled = `
+    padding: 10px 0;
+    height: fit-content;`
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").classList.add("nav-fixed");
+  } else {
+    document.getElementById("header").classList.remove("nav-fixed");
   }
 }
+
