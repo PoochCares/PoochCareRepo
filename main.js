@@ -126,10 +126,14 @@ window.onscroll = function () {
   scrollFunction();
 };
 
+console.log(document.querySelector(".toTop"));
+
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").classList.add("nav-fixed");
+    document.querySelector(".toTop").classList.remove("d-none");
   } else {
     document.getElementById("header").classList.remove("nav-fixed");
+    document.querySelector(".toTop").classList.add("d-none");
   }
 }
